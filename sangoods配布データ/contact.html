@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>message</title>
+    <link rel="stylesheet" href="../css/message.css">
+</head>
+
+<body class="a">
+    <div class="wrap1 pc_view">
+        <header>
+            <div class="nav-list">
+                <img src="../images/sangoods_c.png" alt="サングッズロゴ オレンジ">
+                <nav>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <span class="nav-icon fa fa-home"></span>
+                                <span class="nav-text">HOME</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="miyai.html" class="nav-link">
+                                <span class="nav-icon fa fa-cart-shopping"></span>
+                                <span class="nav-text">CONCEPT</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="message.html" class="nav-link">
+                                <span class="nav-icon fa fa-list"></span>
+                                <span class="nav-text">MESSAGE</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="products.html" class="nav-link">
+                                <span class="nav-icon fa fa-list"></span>
+                                <span class="nav-text">PRODUCT</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="nav-icon fa fa-contact-card"></span>
+                                <span class="nav-text">CONTACT</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    <main class="contact">
+        <h1>お問い合わせ</h1>
+        <form action="" method="">
+            <div>
+                <label>お問い合わせ :</label>
+                <select class="item" name="item">
+                    <option value="">お問い合わせ項目を選択</option>
+                    <option value="product">商品について</option>
+                    <option value="order">注文について</option>
+                    <option value="ship">配送について</option>
+                    <option value="service">サービスについて</option>
+                    <option value="other">その他</option>
+                </select>
+            </div>
+            <div>
+                <label for="name">お名前:</label>
+                <input class="name" id="name" type="text" name="name" placeholder="お名前">
+            </div>
+            <div>
+                <label for="mail">メールアドレス:</label>
+                <input class="mail" id="mail" type="email" name="email" placeholder="メールアドレス">
+            </div>
+            <div>
+                <label for="comment">お問い合わせ詳細:</label><br>
+                <textarea class="comment" id="comment" cols="30" rows="10" placeholder="お問い合わせ内容を入力してください"></textarea>
+            </div>
+            <div>
+                <input class="submit" type="submit" value="送信">
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

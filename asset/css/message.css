@@ -1,0 +1,645 @@
+@charset "UTF-8";
+
+html {
+    box-sizing: border-box;
+    /* color: #E4DBBF; */
+    /* color: white; */
+    color: black;
+    /* background-color: #383127; */
+    /* background-color: black; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f1f1f1;
+    margin: 0;
+}
+
+.wrap1 {
+    margin: 0;
+    width: auto;
+    height: auto;
+    /* background-color: black; */
+
+}
+
+/* header */
+.nav-list {
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list img {
+    max-width: 100%;
+}
+
+nav ul:not(.footer .footer-items){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li:not(.footer .footer-items){
+    font-size: 20px;
+    list-style-type: none;
+    margin-left: 3em;
+    transition: .25s;
+    opacity: .5;
+}
+
+.nav-link {
+    transition: .25s;
+    text-decoration: none;
+}
+
+nav li:hover {
+    opacity: 1;
+    transform: translateY(-15%);
+}
+
+.nav-text {
+    font-weight: bolder;
+    color: black;
+}
+
+.wrap2 {
+    /* margin: 60px; */
+    /* background-color: #c95b0c; */
+    margin: 0;
+    margin-bottom: 100px;
+    width: auto;
+    height: auto;
+    /* background-color: white; */
+    /* color: #383127; */
+    color: black;
+}
+
+h1 :not(.footer .footer-items){
+    padding: 2em 0;
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 7px;
+}
+
+.wrap3 {
+    margin: 0 200px;
+    width: auto;
+    height: auto;
+}
+
+.top {
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.top h2 {
+    letter-spacing: 2px;
+    font-weight: 1000;
+    font-size: 35px;
+}
+
+.top h3:not(.footer) {
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+.top p {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 100px;
+}
+
+.yamada {
+    width: 50%;
+    box-shadow: 10px 10px 10px 5px rgb(49, 49, 49);
+}
+
+.yamada_box {
+    display: flex;
+    margin: 0 80px;
+    align-items: center;
+    /* margin-bottom: 100px; */
+}
+
+.yamada_txt {
+    padding-left: 30px;
+}
+
+.yamada_box p {
+    line-height: 35px;
+}
+
+.name {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.yamada_txt span {
+    font-weight: 600;
+}
+
+.top {
+    opacity: 0;
+    transition: transform 1s linear;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+}
+
+.effect {
+    animation-name: imgbrightness;
+    opacity: 1;
+    transition: .8s;
+}
+
+@keyframes imgbrightness {
+    0% {
+        opacity: 0;
+        filter: brightness(300%);
+        /*　明度300%　*/
+    }
+
+    100% {
+        opacity: 1;
+        filter: brightness(100%);
+        /*　100%が基準値　*/
+    }
+
+}
+
+.yamada_box {
+    padding: 10px;
+    animation: fadeIn 4s ease 1s 1 normal backwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.pc_view {
+    display: block;
+}
+
+.sp_view {
+    display: none;
+}
+
+/* miyai page*/
+.souma {
+    width: 100%;
+    background: url("../images/aka.jpg");
+    background-size: cover;
+    background-position: center;
+    animation: bg_slide 30s linear infinite;
+}
+
+@keyframes bg_slide {
+    0% {
+        background-position: left center;
+    }
+
+    50% {
+        background-position: right center;
+    }
+
+    100% {
+        background-position: left center;
+    }
+}
+
+.miyai{
+    margin-right: 200px;
+    margin-bottom: 180px;
+}
+.miyai h2 {
+    font-size: 30px;
+    margin-top: 55px;
+    margin-left: 5%;
+    color: black;
+}
+
+.miyai dd {
+    margin-left: 25%;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.miyai p {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 525;
+    padding: 50px;
+    margin-left: 30%;
+    line-height: 2.2;
+    background-color: rgba(25, 55, 52, 0.2);
+}
+
+/* product page */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    position: relative;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.title::after {
+    content: "";
+    width: 100px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 30%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.col img {
+    width: 100%;
+}
+
+/*レスポンシブ*/
+@media screen and (max-width: 680px) {
+    .pc_view {
+        display: block;
+        width: 100%;
+    }
+
+    .nav-list {
+        width: 100%;
+        display: block;
+        margin-top: 50px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+
+    #logo{
+        display: none;
+    }
+
+    .sp_view {
+        display: block;
+    }
+
+    main{
+        text-align: center;
+    }
+
+    h1:not(.footer) {
+        font-size: 35px;
+    }
+
+    .top h2 {
+        font-size: 20px;
+    }
+
+    .top p {
+        margin: 10px 20px auto;
+        line-height: 3;
+    }
+
+    .wrap3 {
+        margin: 0;
+    }
+
+    .yamada_box {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .yamada {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .yamada_txt span {
+        margin-top: 50px;
+        font-weight: 200;
+    }
+
+    .miyai{
+        width: 100%;
+        text-align: center;
+    }
+    .miyai h2{
+        margin-left: 0;
+    }
+    .miyai p{
+        margin-left: 0;
+    }
+    .miyai dd{
+        margin-left: 0;
+    }
+    
+}
+
+
+/* contact */
+
+.contact1 {
+    background: #f1f1f1;
+}
+
+*,
+*:before,
+*::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.cont {
+    padding: 1em;
+    /* margin: 200px; */
+}
+
+.cont h1 {
+    text-align: center;
+    color: #a8a8a8;
+    text-shadow: 1px 1px 0 white;
+    padding: 0;
+}
+
+.cont form {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.cont form input,
+form textarea {
+    border: 0;
+    outline: o;
+    padding: 1em;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    resize: none;
+}
+
+.cont form input:focus,
+form textarea:focus {
+    -moz-box-shadow: 0 0px 2px #e74c3c !important;
+    -webkit-box-shadow: 0 0px 2px #e74c3c !important;
+    box-shadow: 0 0px 2px #e74c3c !important;
+}
+
+.cont form #input-submit {
+    color: white;
+    background: #ff8c00;
+    cursor: pointer;
+}
+
+.cont form #input-submit:over {
+    -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+    -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+    box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+}
+
+.cont form textarea {
+    height: 126px;
+}
+
+.cont .half {
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+}
+
+.cont .right {
+    width: 50%;
+}
+
+.cont .left {
+    margin-right: 2%;
+}
+
+@media screen and (max-width: 690px) {
+    .cont .half {
+        width: 100%;
+        float: none;
+        margin-bottom: 0;
+    }
+}
+
+/* Clearfix */
+.cont .cf:before,
+.cont .cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/* footer */
+
+.footer {
+    /* margin: 0;
+    padding: 0; */
+    width: 100%;
+    background: #00121b;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+}
+
+.inner-footer {
+    width: 95%;
+    margin: auto;
+    /* padding: 30px 10px;   */
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    /* justify-content: center; */
+}
+
+#footer-2 {
+    margin-left: 300px;
+}
+
+.footer-items {
+    margin: 0;
+    width: 25%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.footer-items p{
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25px;
+    color: #fff;
+    margin-top: 0;
+}
+.footer h3{
+    margin-left: 40px;
+    margin-bottom:0 ;
+}
+
+
+.footer-items h1 {
+    color: #fff;
+    margin-bottom: 0;
+    /* margin: 0;
+    padding: 0; */
+}
+
+.footer .border1 {
+    height: 3px;
+    width: 40px;
+    margin-left: 40px;
+    background: #ff9800;
+    color: #ff9800;
+    background-color: #ff9800;
+    border: 0px;
+}
+
+.footer ul {
+    list-style: none;
+    /* margin: 0; */
+    /* padding: 0   ; */
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.footer ul a {
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.footer ul a:hover {
+    color: #ff9800;
+}
+
+.footer ul li {
+    margin: 10px 0;
+    height: 25px;
+    width: 350px;
+}
+
+.footer li i {
+    margin-right: 10px;
+}
+
+.footer .social-media {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.footer .social-media a {
+    text-decoration: none;
+}
+
+.footer .social-media i {
+    height: 25px;
+    width: 25px;
+    margin: 20px 10px;
+    padding: 0;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.footer .social-media i:hover {
+    transform: scale(1.5);
+}
+
+.footer .footer-bottom {
+    margin: 0;
+    padding: 10px;
+    background: #00121b;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* for tablet mode view */
+
+@media screen and (max-width: 1275px) {
+    .footer-items {
+        width: 50%;
+    }
+
+    #footer-2 {
+        margin-left: 0;
+    }
+}
+
+/* for mobile screen view */
+
+@media screen and (max-width: 690px) {
+
+
+    /* #header ul{
+        background-color: #f7f7f7;
+    } */
+    nav li:not(.footer .footer-item){
+        margin-left: 1em;
+    }
+    .footer-items {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #footer-2 {
+        margin-left: 0;
+    }
+}
+
+/* you can toggle the media screen view accordingly by changing the (max-width: px) to your convenience */
+
+/* Thanks to Computer Conversations */
+footer {
+    position: relative;
+    /* padding: 0px 100px; */
+    background: var(--primary);
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}

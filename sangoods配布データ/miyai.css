@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+.souma{
+    width: 100%;
+    background: url("../images/aka.jpg");
+    background-size: cover;
+    background-position: center center;
+    animation: bg_slide 30s linear infinite;
+}
+@keyframes bg_slide {
+    0% { background-position: left center;}
+    50% { background-position: right center;}
+    100% { background-position: left center;}
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav li{
+    padding-right: 30px;
+    font-size: 20px;
+    color: #fff;
+}
+nav a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: -1000px;
+}
+img{
+    width: 250px;
+}
+h2{
+    font-size: 30px;
+    width: 280px;
+    line-height: 1;
+    color: black;
+}
+dd{
+    margin-left: 25%;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+p{
+    font-size: 20px;
+    margin-left: 30%;
+    line-height: 2.2;
+    font-family: 'Kosugi', sans-serif;
+}
+main{
+    width: 100%;
+}
+main p{
+    font-size: 30px;
+    background-color: rgba(25,55,52,0.2);
+    padding: 50px;
+}
+.a{
+    background-color: rgba(25,55,52,0.2);
+}
+
+

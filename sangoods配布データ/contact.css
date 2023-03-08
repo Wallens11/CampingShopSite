@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav li{
+    padding-right: 30px;
+    font-size: 20px;
+    color: #fff;
+}
+nav a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: -1000px;
+}
+html{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+}
+.item{
+    width: 15%;
+    height: 40px;
+}
+.name{
+    height: 40px;
+}
+.mail{
+    width: 20%;
+    height: 35px;
+}
+.comment{
+    width: 30%;
+    height: 300px;
+}
+.submit{
+    width: 5%;
+    height: 30px;
+}
